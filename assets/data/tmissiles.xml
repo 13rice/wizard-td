@@ -1,0 +1,158 @@
+<data>
+	<spelldatas>
+		<!-- Spells start from 1000001 -->
+		<!-- SpellSkills start from 2000001 -->
+		<!-- #TARGET_POS{q $zzplayerx - $x, $zzplayery - $y}; -->
+		<!-- #TARGET_POS{q $zzplayerx - $x, $zzplayery - $y}; -->
+		<spells>
+			
+			<spell name="Circle Collider" id="1100000" cmlscript="" atlasName="fx.png" animationPrefix="collider" fps="0" frame="-1" >
+				<hitbox shape="circle" radius="1" x1="0" y1="0"/>
+			</spell>
+
+			<spell name="Target" id="1100001" cmlscript="" atlasName="fx.png" frameName="void.png" fps="0" effect="1">
+			</spell>
+
+			<!-- SWORD -->
+			<spell name="[C] Sword" id="1200000" cmlscript="&TARGET_POS f14{tp ht0 r vd($v) w$zzrange ko2} w30 ko2" atlasName="fx.png" animationPrefix="sword_bullet" >
+				<hitbox shape="box" width="32" height="15" x1="0" y1="0"/>
+			</spell>
+
+			<!-- GLAIVES -->
+			<spell name="Dancing glaives" id="1200001" cmlscript="&TARGET_POS f10{tp ht60 r vd($v) {[i1 hs-18 r ~]} i60 p $t.x, $t.y ~ vd8 p $zzcasterx, $zzcastery ~ ko2}  w60 ko2"
+				atlasName="fx.png" frameName="shuriken_glaive.png" maxCollisionCount="1">
+				<hitbox shape="circle" radius="12" x1="0" y1="0"/>
+			</spell>
+
+			<!-- FIREBOLT -->
+			<spell name="[C] Firebolt" id="1200003" cmlscript="ha0 &TARGET_POS f12{tp ht0 r vd($v) @ko2{&zzsound 2000 f0{1200004 p $p.x, $p.y w20 ko2}}  w?($td > 10) ko2} w300 ko2" atlasName="fx.png" animationPrefix="fireball-" fps="16" ox="30" collide="1" maxCollisionCount="1" noDmg="1">
+				<hitbox shape="circle" radius="10" x1="0" y1="0"/>
+			</spell>
+
+			<spell name="[C] Impact 40x" id="1200004" cmlscript="" atlasName="fx.png" animationPrefix="impact_40_" fps="20" loop="0">
+				<hitbox shape="circle" radius="20" x1="0" y1="0"/>
+			</spell>
+
+			<!-- NOVA -->
+			<spell name="[C] Frost nova" id="1200005" cmlscript="ha $i?(360) f0 {p $zzcasterx, $zzcastery [&zzscale (16 * ($l + 1)) / 160 &zzhbradius ($zzrange * ($l + 1)) / 10 w1]10 w2 ko2} w60 ko2" atlasName="fx.png" frameName="nova_1bit.png"
+				buff="PROP_MOD" buffArg0="cmlSlowFactor" buffArg1="2" buffImg="slow_freeze_">
+				<hitbox shape="circle" radius="16" x1="0" y1="0"/>
+			</spell>
+
+
+			<!-- METEOR -->
+			<spell name="Blizzard" id="1200006" cmlscript="[q $i?($zzrange) * $cos($i?(360)), $i?($zzrange) * $sin($i?(360)) f0 {ha180 r /*dist*/ l$1=((-30 - $y) / $sin(105)) ha285 f12 {1200007 ha180 r p $p.x + $1 * $cos(105), -30 w($abs($1) / 12) f0{1200008 ha(90*$i?(4)) r w14 ko2} ko2}$1 w44 ko2} w4] $zzdur" atlasName="fx.png" animationPrefix="void" fps="10" effect="1" loop="0">
+			</spell>
+
+			<spell name="[E] Blizzard bullet" id="1200007" cmlscript="" atlasName="fx.png" animationPrefix="shard_" fps="0" effect="1" frame="-1"  ox="1" oy="16">
+			</spell>
+
+			<spell name="[C] Blizzard impact" id="1200008" cmlscript="" atlasName="fx.png" animationPrefix="impact_20_" fps="20">
+				<hitbox shape="circle" radius="10" x1="0" y1="0"/>
+			</spell>
+
+			<!-- METEOR -->
+			<spell name="Meteor" id="1200010" cmlscript="f0 {ha180 r /*dist*/ l$1=((-50 - $y) / $sin(120)) ha300 f10 {1200011 ha210 r p $p.x + $1 * $cos(120), -50  w($abs($1) / 10) f0{1200012 ha(90*$i?(4)) r [ha($i?(360)) f4 {1200013 vy($vy - 5) ay0.5 w15 ko2} w1]6 w14 ko2} ko2}$1 w44 ko2}" atlasName="fx.png" animationPrefix="meteor_pre" fps="20" effect="1" loop="0">
+			</spell>
+
+			<spell name="[E] Meteor bullet" id="1200011" cmlscript="" atlasName="fx.png" animationPrefix="meteor_fire_" fps="20" effect="1" ox="15" oy="62">
+			</spell>
+
+			<spell name="[C] Meteor impact" id="1200012" cmlscript="" atlasName="fx.png" animationPrefix="ground_impact" fps="14">
+				<hitbox shape="circle" radius="25" x1="0" y1="0"/>
+			</spell>
+
+			<spell name="[E] Meteor Fragment" id="1200013" cmlscript="" atlasName="fx.png" animationPrefix="void" fps="0" frame="-1" effect="1">
+			</spell>
+
+
+			<!-- CHAIN LIGHTNING -->
+			<spell name="Chain Lightning" id="1200014" cmlscript="l$7=$zzrange l$8=$zzcasterx l$9=$zzcastery [&zzrdmtarget $x, $y, $7 &zzlightning $8, $9, $t.x, $t.y p $t.x, $t.y ha180 f0{w25 ko2} w4 l$7=($zzrange * 5) l$8=$x l$9=$y]$zzdur" atlasName="fx.png" animationPrefix="lightning-hits-4-" fps="26" loop="0">
+				<hitbox shape="circle" radius="2" x1="0" y1="0"/>
+			</spell>
+
+			<spell name="Impact Area Damage" id="1000073" cmlscript="ha180 f0 {w20 ko2}" atlasName="fx.png" animationPrefix="radial_explosion_" fps="40" loop="0" maxCollisionCount="1">
+				<hitbox shape="circle" radius="20" x1="0" y1="0"/>
+			</spell>
+
+		</spells>
+
+		<spellSkills>
+
+			<!--==============  FIRE ===================== 2 - 12  4 - 24-->
+
+			<spellSkill id="2000012" name="Firebolt" el0="fire" el1="fire">
+				<spellLevels>
+					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.5" 	level="1" areaWidth="120" damage="2" range="15" duration="2" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.48" 	level="2" areaWidth="120" damage="4" range="15" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.46" 	level="3" areaWidth="120" damage="6" range="15" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.44" 	level="4" areaWidth="120" damage="8" range="15" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.42" 	level="5" areaWidth="120" damage="10" range="15" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
+				</spellLevels>
+			</spellSkill>
+
+			<!-- 2 - 18 -->
+			<spellSkill id="2000004" name="Chain Lightning" el0="fire" el1="water">
+				<spellLevels>
+					<spellLevel name="Chain Lightning" spellId="1200014" coolDown="0.6" level="1" areaWidth="90" damage="1" range="40" duration="2" icon="tower_storm.png" description="Cast a chain lightning bouncing from enemy to enemy. Dealing damage to each target." short="Deals %%damage%% damage. Targets %%duration%% enemies." />
+					<spellLevel name="Chain Lightning" spellId="1200014" coolDown="0.6" level="2" areaWidth="90" damage="2" range="50" duration="3" icon="tower_storm.png" description="Cast a chain lightning bouncing from enemy to enemy. Dealing damage to each target." short="Deals %%damage%% damage. Targets %%duration%% enemies." />
+					<spellLevel name="Chain Lightning" spellId="1200014" coolDown="0.6" level="3" areaWidth="90" damage="3" range="60" duration="4" icon="tower_storm.png" description="Cast a chain lightning bouncing from enemy to enemy. Dealing damage to each target." short="Deals %%damage%% damage. Targets %%duration%% enemies." />
+					<spellLevel name="Chain Lightning" spellId="1200014" coolDown="0.6" level="4" areaWidth="90" damage="4" range="60" duration="5" icon="tower_storm.png" description="Cast a chain lightning bouncing from enemy to enemy. Dealing damage to each target." short="Deals %%damage%% damage. Targets %%duration%% enemies." />
+					<spellLevel name="Chain Lightning" spellId="1200014" coolDown="0.6" level="5" areaWidth="90" damage="5" range="60" duration="6" icon="tower_storm.png" description="Cast a chain lightning bouncing from enemy to enemy. Dealing damage to each target." short="Deals %%damage%% damage. Targets %%duration%% enemies." />
+				</spellLevels>
+			</spellSkill>
+
+			<spellSkill id="2000008" name="Meteor" el0="fire" el1="metal">
+				<spellLevels>
+					<spellLevel name="Meteor" spellId="1200010" coolDown="2.5" level="1" areaWidth="144" damage="10" range="80" icon="tower_glaive.png" description="Calls a Meteor down from the sky, dealing high damage." short="Deals %%damage%% damage. Increase tower range." />
+					<spellLevel name="Meteor" spellId="1200010" coolDown="2.5" level="2" areaWidth="160" damage="20" range="80" icon="tower_glaive.png" description="Calls a Meteor down from the sky, dealing high damage." short="Deals %%damage%% damage. Increase tower range." />
+					<spellLevel name="Meteor" spellId="1200010" coolDown="2.5" level="3" areaWidth="176" damage="30" range="80" icon="tower_glaive.png" description="Calls a Meteor down from the sky, dealing high damage." short="Deals %%damage%% damage. Increase tower range." />
+					<spellLevel name="Meteor" spellId="1200010" coolDown="2.5" level="4" areaWidth="192" damage="40" range="80" icon="tower_glaive.png" description="Calls a Meteor down from the sky, dealing high damage." short="Deals %%damage%% damage. Increase tower range." />
+					<spellLevel name="Meteor" spellId="1200010" coolDown="2.5" level="5" areaWidth="208" damage="60" range="80" icon="tower_glaive.png" description="Calls a Meteor down from the sky, dealing high damage." short="Deals %%damage%% damage. Increase tower range." />
+				</spellLevels>
+			</spellSkill>
+
+			<!--==============  LIGHTNING  ===================== -->
+
+			<spellSkill id="2000015" name="Sword" el0="metal" el1="metal" >
+				<spellLevels>
+					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="1" areaWidth="120" damage="1" 	range="10" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
+					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="2" areaWidth="120" damage="2" 	range="11" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
+					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="3" areaWidth="120" damage="3" 	range="12" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
+					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="4" areaWidth="120" damage="4" 	range="13" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
+					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="5" areaWidth="120" damage="5" 	range="15" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
+				</spellLevels>
+			</spellSkill>
+
+			<!--==============  WATER  ===================== -->
+
+			<spellSkill id="2000021" name="Frost nova" el0="water" el1="water">
+				<spellLevels>
+					<spellLevel name="Frost nova" spellId="1200005" coolDown="1.5" level="1" areaWidth="90" damage="0.2" 	range="80" duration="1" icon="tower_nova.png" description="Blasts enemy units around the caster with a wave of damaging frost that slows movement." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Frost nova" spellId="1200005" coolDown="1.4" level="2" areaWidth="90" damage="0.4" 	range="80" duration="1" icon="tower_nova.png" description="Blasts enemy units around the caster with a wave of damaging frost that slows movement." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Frost nova" spellId="1200005" coolDown="1.3" level="3" areaWidth="90" damage="0.6" 	range="80" duration="1" icon="tower_nova.png" description="Blasts enemy units around the caster with a wave of damaging frost that slows movement." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Frost nova" spellId="1200005" coolDown="1.2" level="4" areaWidth="90" damage="0.8" 	range="80" duration="1" icon="tower_nova.png" description="Blasts enemy units around the caster with a wave of damaging frost that slows movement." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Frost nova" spellId="1200005" coolDown="1.0" level="5" areaWidth="90" damage="1" 	range="80" duration="1" icon="tower_nova.png" description="Blasts enemy units around the caster with a wave of damaging frost that slows movement." short="Deals %%damage%% damage. Reduce cooldown." />
+				</spellLevels>
+			</spellSkill>
+
+			<spellSkill id="2000005" name="Blizzard" directional="1" el0="metal" el1="water">
+				<spellLevels>
+					<spellLevel name="Blizzard" spellId="1200006" coolDown="2" level="1" areaWidth="180" damage="2" 	range="40" duration="6" 	icon="tower_frost.png" description="Calls down waves of freezing ice shards that damage units in a target area." short="Deals %%damage%% damage. Increase shards number." />
+					<spellLevel name="Blizzard" spellId="1200006" coolDown="2" level="2" areaWidth="180" damage="4" 	range="43" duration="8" 	icon="tower_frost.png" description="Calls down waves of freezing ice shards that damage units in a target area." short="Deals %%damage%% damage. Increase shards number." />
+					<spellLevel name="Blizzard" spellId="1200006" coolDown="2" level="3" areaWidth="180" damage="6" 	range="46" duration="10" 	icon="tower_frost.png" description="Calls down waves of freezing ice shards that damage units in a target area." short="Deals %%damage%% damage. Increase shards number." />
+					<spellLevel name="Blizzard" spellId="1200006" coolDown="2" level="4" areaWidth="180" damage="9" 	range="50" duration="12" 	icon="tower_frost.png" description="Calls down waves of freezing ice shards that damage units in a target area." short="Deals %%damage%% damage. Increase shards number." />
+					<spellLevel name="Blizzard" spellId="1200006" coolDown="2" level="5" areaWidth="180" damage="12" 	range="55" duration="14" 	icon="tower_frost.png" description="Calls down waves of freezing ice shards that damage units in a target area." short="Deals %%damage%% damage. Increase shards number." />
+				</spellLevels>
+			</spellSkill>
+			
+			<!--==============  GENERIC SPELL  ===================== -->
+
+			<spellSkill id="2000041" name="AreaDamage" >
+				<spellLevels>
+					<spellLevel name="AreaDamage" spellId="1000073" coolDown="0" level="1" damage="5" range="20" icon="SpellBook01_03_52.png" description="Area_Damage_lvl_1" />
+				</spellLevels>
+			</spellSkill>
+		</spellSkills>
+	</spelldatas>
+</data>

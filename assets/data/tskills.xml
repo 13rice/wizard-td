@@ -1,0 +1,167 @@
+<data>
+	<levels>
+		<level id="1">
+			<skills>
+				<skill id="PLAYER_RATE_LVLUP" bonus="0.99" mod="0" attribute="SPELL_CASTING_RATE" flag="1" desc="Player casting rate: +1%" bonusDesc="+1%" />
+				<skill id="PLAYER_DMG_LVLUP" bonus="1.05" mod="0" attribute="SPELL_DAMAGE" flag="1" desc="Player damage: +5%" bonusDesc="+5%" />
+			</skills>
+			<abilities>
+				<skill id="ADD_WIZARD_LVLUP" bonus="1" mod="1" attribute="ADD_WIZARD" flag="1" desc="Adds another wizard casting spells with you. Craft a spell to invoke the additional caster." bonusDesc="" />
+			</abilities>
+		</level>
+		<level id="2">
+			<skills>
+				<skill id="ALLY_RATE_LVLUP" bonus="0.99" mod="0" attribute="SPELL_CASTING_RATE" flag="2" desc="Allies casting rate: +1%" bonusDesc="+1%" />
+				<skill id="ALLY_DMG_LVLUP" bonus="1.05" mod="0" attribute="SPELL_DAMAGE" flag="2" desc="Allies damage: +5%" bonusDesc="+5%" />
+			</skills>
+		</level>
+		<level id="3">
+			<skills>
+				<skill id="PLAYER_RATE_LVLUP" bonus="0.98" mod="0" attribute="SPELL_CASTING_RATE" flag="1" desc="Player casting rate: +2%" bonusDesc="+1%" />
+				<skill id="PLAYER_DMG_LVLUP" bonus="1.1" mod="0" attribute="SPELL_DAMAGE" flag="1" desc="Player damage: +10%" bonusDesc="+5%" />
+			</skills>
+		</level>
+		<level id="4">
+			<skills>
+				<skill id="ALLY_RATE_LVLUP" bonus="0.98" mod="0" attribute="SPELL_CASTING_RATE" flag="2" desc="Allies casting rate: +2%" bonusDesc="+1%" />
+				<skill id="ALLY_DMG_LVLUP" bonus="1.1" mod="0" attribute="SPELL_DAMAGE" flag="2" desc="Allies damage: +10%" bonusDesc="+5%" />
+			</skills>
+		</level>
+		<level id="5">
+			<skills>
+				<skill id="PLAYER_RATE_LVLUP" bonus="0.971" mod="0" attribute="SPELL_CASTING_RATE" flag="1" desc="Player casting rate: +3%" bonusDesc="+1%" />
+				<skill id="PLAYER_DMG_LVLUP" bonus="1.15" mod="0" attribute="SPELL_DAMAGE" flag="1" desc="Player damage: +15%" bonusDesc="+5%" />
+			</skills>
+			<abilities>
+				<skill id="ADD_WIZARD_LVLUP" bonus="2" mod="1" attribute="ADD_WIZARD" flag="1" desc="Adds another wizard casting spells with you. Craft a spell to invoke the additional caster." bonusDesc="" />
+			</abilities>
+		</level>
+	</levels>
+	<skilltree>
+		<category id="Origin">
+			<skill id="UNLOCK_ELEMENTAL_AFFINITY" bonus="1" mod="1" attribute="ELEMENTAL_AFFINITY" flag="1" desc="Enable Elemental Affinities, pick one favorite element before the first wave" name="Elemental Affinity" maxLevel="1" stage="0" x="309" y="216" level="0" bonusDesc=""/>
+		</category>
+
+		<category id="Alchemy">
+			<skill id="PLAYER_RECYCLE_TWO" bonus="0.7" mod="1" attribute="RECYCLE_TWO" flag="1" desc="Allows to recycle. 70 % chance to recycle two elements per spell level." name="Conversion" maxLevel="4" stage="1" x="263" y="176" level="0" bonusDesc="Improves to 80 % chance" />
+			<skill id="PLAYER_RECYCLE_TWO" bonus="0.8" mod="1" attribute="RECYCLE_TWO" flag="1" desc="Allows to recycle. 80 % chance to recycle two elements per spell level." name="Conversion" maxLevel="4" stage="1" x="263" y="176" level="1" bonusDesc="Improves to 90 % chance" />
+			<skill id="PLAYER_RECYCLE_TWO" bonus="0.9" mod="1" attribute="RECYCLE_TWO" flag="1" desc="Allows to recycle. 90 % chance to recycle two elements per spell level." name="Conversion" maxLevel="4" stage="1" x="263" y="176" level="2" bonusDesc="Improves to 100 % chance" />
+			<skill id="PLAYER_RECYCLE_TWO" bonus="1" mod="1" attribute="RECYCLE_TWO" flag="1" desc="Allows to recycle. 100 % chance to recycle two elements per spell level." name="Conversion" maxLevel="4" stage="1" x="263" y="176" level="3" bonusDesc="" />
+			<skill id="PLAYER_RECYCLE_THREE" bonus="0.2" mod="1" attribute="RECYCLE_THREE" flag="1" desc="Allows to recycle. 20 % chance to recycle all elements." name="Purity" maxLevel="4" stage="3" x="170" y="123" level="0" bonusDesc="Improves to 30 % chance" />
+			<skill id="PLAYER_RECYCLE_THREE" bonus="0.3" mod="1" attribute="RECYCLE_THREE" flag="1" desc="Allows to recycle. 30 % chance to recycle all elements." name="Purity" maxLevel="4" stage="3" x="170" y="123" level="1" bonusDesc="Improves to 40 % chance" />
+			<skill id="PLAYER_RECYCLE_THREE" bonus="0.4" mod="1" attribute="RECYCLE_THREE" flag="1" desc="Allows to recycle. 40 % chance to recycle all elements." name="Purity" maxLevel="4" stage="3" x="170" y="123" level="2" bonusDesc="Improves to 50 % chance" />
+			<skill id="PLAYER_RECYCLE_THREE" bonus="0.5" mod="1" attribute="RECYCLE_THREE" flag="1" desc="Allows to recycle. 50 % chance to recycle all elements." name="Purity" maxLevel="4" stage="3" x="170" y="123" level="3" bonusDesc="" />
+
+			<skill id="FORTRESS_REGEN" bonus="5" mod="1" attribute="FORTRESS_REGEN" flag="1" desc="Restores 5 hit points after each wave" name="Regeneration" maxLevel="4" stage="2" x="217" y="163" level="0" bonusDesc="Restores 8 hit points" />
+			<skill id="FORTRESS_REGEN" bonus="8" mod="1" attribute="FORTRESS_REGEN" flag="1" desc="Restores 8 hit points after each wave" name="Regeneration" maxLevel="4" stage="2" x="217" y="163" level="1" bonusDesc="Restores 11 hit points" />
+			<skill id="FORTRESS_REGEN" bonus="11" mod="1" attribute="FORTRESS_REGEN" flag="1" desc="Restores 11 hit points after each wave" name="Regeneration" maxLevel="4" stage="2" x="217" y="163" level="2" bonusDesc="Restores 14 hit points" />
+			<skill id="FORTRESS_REGEN" bonus="14" mod="1" attribute="FORTRESS_REGEN" flag="1" desc="Restores 14 hit points after each wave" name="Regeneration" maxLevel="4" stage="2" x="217" y="163" level="3" bonusDesc="" />
+			<skill id="PLAYER_REVIVE" bonus="0.3" mod="1" attribute="REVIVE" flag="1" desc="Revive one time with 30% hit points" name="Full Alchemist" maxLevel="2" stage="3" x="230" y="77" level="0" bonusDesc="Revive with 50% hit points" />
+			<skill id="PLAYER_REVIVE" bonus="0.5" mod="1" attribute="REVIVE" flag="1" desc="Revive one time with 50% hit points" name="Full Alchemist" maxLevel="2" stage="3" x="230" y="77" level="1" bonusDesc="" />
+
+			<skill id="FORTRESS_DEFENSE" bonus="0.95" mod="0" attribute="FORTRESS_DEFENSE" flag="1" desc="Increases the defense of the fortress by 5%."  name="Transmute" maxLevel="4" stage="2" x="264" y="123" level="0" bonusDesc="Increases by 10%" />
+			<skill id="FORTRESS_DEFENSE" bonus="0.9" mod="0" attribute="FORTRESS_DEFENSE" flag="1" desc="Increases the defense of the fortress by 10%."  name="Transmute" maxLevel="4" stage="2" x="264" y="123" level="1" bonusDesc="Increases by 15%" />
+			<skill id="FORTRESS_DEFENSE" bonus="0.85" mod="0" attribute="FORTRESS_DEFENSE" flag="1" desc="Increases the defense of the fortress by 15%."  name="Transmute" maxLevel="4" stage="2" x="264" y="123" level="2" bonusDesc="Increases by 20%" />
+			<skill id="FORTRESS_DEFENSE" bonus="0.8" mod="0" attribute="FORTRESS_DEFENSE" flag="1" desc="Increases the defense of the fortress by 20%."  name="Transmute" maxLevel="4" stage="2" x="264" y="123" level="3" bonusDesc="" />
+		</category>
+
+		<category id="Knowledge">
+			<skill id="PLAYER_SCROLLS_LIMIT" bonus="2" mod="1" attribute="SCROLLS_LIMIT" flag="1" desc="Keep up to 5 scrolls per element." name="Memory" maxLevel="2" stage="3" x="452" y="123" level="0" bonusDesc="Keep up to 7 scrolls " />
+			<skill id="PLAYER_SCROLLS_LIMIT" bonus="4" mod="1" attribute="SCROLLS_LIMIT" flag="1" desc="Keep up to 7 scrolls per element." name="Memory" maxLevel="2" stage="3" x="452" y="123" level="1" bonusDesc="" />
+			<skill id="FORTRESS_LIFE" bonus="50" mod="1" attribute="FORTRESS_LIFE" flag="1" desc="Increases maximum hit points of the fortress by 50."  name="Architect" maxLevel="4" stage="2" x="402" y="163" level="0" bonusDesc="Increases by 100 hit points" />
+			<skill id="FORTRESS_LIFE" bonus="100" mod="1" attribute="FORTRESS_LIFE" flag="1" desc="Increases maximum hit points of the fortress by 100."  name="Architect" maxLevel="4" stage="2" x="402" y="163" level="1" bonusDesc="Increases by 150 hit points" />
+			<skill id="FORTRESS_LIFE" bonus="150" mod="1" attribute="FORTRESS_LIFE" flag="1" desc="Increases maximum hit points of the fortress by 150."  name="Architect" maxLevel="4" stage="2" x="402" y="163" level="2" bonusDesc="Increases by 200 hit points" />
+			<skill id="FORTRESS_LIFE" bonus="200" mod="1" attribute="FORTRESS_LIFE" flag="1" desc="Increases maximum hit points of the fortress by 200."  name="Architect" maxLevel="4" stage="2" x="402" y="163" level="3" bonusDesc="" />
+			<skill id="FORTRESS_SPIKE" bonus="2" mod="1" attribute="FORTRESS_SPIKE_DAMAGE" flag="1" desc="Surrounds the walls with spikes that deal 2 damage to enemy melee attackers."  name="Spiked Barricades" maxLevel="4" stage="2" x="355" y="123" level="0" bonusDesc="Deals 3 damage per attack" />
+			<skill id="FORTRESS_SPIKE" bonus="3" mod="1" attribute="FORTRESS_SPIKE_DAMAGE" flag="1" desc="Surrounds the walls with spikes that deal 3 damage to enemy melee attackers."  name="Spiked Barricades" maxLevel="4" stage="2" x="355" y="123" level="1" bonusDesc="Deals 4 damage per attack" />
+			<skill id="FORTRESS_SPIKE" bonus="4" mod="1" attribute="FORTRESS_SPIKE_DAMAGE" flag="1" desc="Surrounds the walls with spikes that deal 4 damage to enemy melee attackers."  name="Spiked Barricades" maxLevel="4" stage="2" x="355" y="123" level="2" bonusDesc="Deals 5 damage per attack" />
+			<skill id="FORTRESS_SPIKE" bonus="5" mod="1" attribute="FORTRESS_SPIKE_DAMAGE" flag="1" desc="Surrounds the walls with spikes that deal 5 damage to enemy melee attackers."  name="Spiked Barricades" maxLevel="4" stage="2" x="355" y="123" level="3" bonusDesc="" />
+			<skill id="ADD_WIZARD_KNOWLEDGE" bonus="1" mod="1" attribute="ADD_WIZARD" flag="1" desc="Adds one aditional wizard" name="Perfect Team" maxLevel="1" stage="3" x="382" y="77" level="0" bonusDesc="" />
+			<skill id="PLAYER_ELEMENTAL_AFFINITY" bonus="1" mod="1" attribute="ELEMENTAL_AFFINITY" flag="1" desc="Improves the Elemental Affinities to level 2." name="Awareness" maxLevel="4" stage="1" x="355" y="176" level="0" bonusDesc="Upgrades to level 3" />
+			<skill id="PLAYER_ELEMENTAL_AFFINITY" bonus="2" mod="1" attribute="ELEMENTAL_AFFINITY" flag="1" desc="Improves the Elemental Affinities to level 3." name="Awareness" maxLevel="4" stage="1" x="355" y="176" level="1" bonusDesc="Upgrades to level 4" />
+			<skill id="PLAYER_ELEMENTAL_AFFINITY" bonus="3" mod="1" attribute="ELEMENTAL_AFFINITY" flag="1" desc="Improves the Elemental Affinities to level 4." name="Awareness" maxLevel="4" stage="1" x="355" y="176" level="2" bonusDesc="Upgrades to level 5" />
+			<skill id="PLAYER_ELEMENTAL_AFFINITY" bonus="4" mod="1" attribute="ELEMENTAL_AFFINITY" flag="1" desc="Improves the Elemental Affinities to level 5." name="Awareness" maxLevel="4" stage="1" x="355" y="176" level="3" bonusDesc="" />
+
+		</category>
+
+
+		<category id="Sorcery">
+			<skill id="PLAYER_INITIAL_SCROLLS" bonus="2" mod="1" attribute="INITIAL_SCROLLS" flag="1" desc="Starts the level with 2 random scrolls" name="Haste" maxLevel="4" stage="1" x="263" y="256" level="0" bonusDesc="Starts with 3 random scrolls" />
+			<skill id="PLAYER_INITIAL_SCROLLS" bonus="3" mod="1" attribute="INITIAL_SCROLLS" flag="1" desc="Starts the level with 3 random scrolls" name="Haste" maxLevel="4" stage="1" x="263" y="256" level="1" bonusDesc="Starts with 4 random scrolls" />
+			<skill id="PLAYER_INITIAL_SCROLLS" bonus="4" mod="1" attribute="INITIAL_SCROLLS" flag="1" desc="Starts the level with 4 random scrolls" name="Haste" maxLevel="4" stage="1" x="263" y="256" level="2" bonusDesc="Starts with 5 random scrolls" />
+			<skill id="PLAYER_INITIAL_SCROLLS" bonus="5" mod="1" attribute="INITIAL_SCROLLS" flag="1" desc="Starts the level with 5 random scrolls" name="Haste" maxLevel="4" stage="1" x="263" y="256" level="3" bonusDesc="" />
+			<skill id="PLAYER_HP_LEACH" bonus="1" mod="1" attribute="LIFE_LEACH" flag="1" desc="Each kill from the player have 5% chance to restore 1 hit points." name="Mortar" maxLevel="4" stage="3" x="170" y="292" level="0" bonusDesc="Restore 2 hit points" />
+			<skill id="PLAYER_HP_LEACH" bonus="2" mod="1" attribute="LIFE_LEACH" flag="1" desc="Each kill from the player have 5% chance to restore 2 hit points." name="Mortar" maxLevel="4" stage="3" x="170" y="292" level="1" bonusDesc="Restore 3 hit points" />
+			<skill id="PLAYER_HP_LEACH" bonus="3" mod="1" attribute="LIFE_LEACH" flag="1" desc="Each kill from the player have 5% chance to restore 3 hit points." name="Mortar" maxLevel="4" stage="3" x="170" y="292" level="2" bonusDesc="Restore 4 hit points" />
+			<skill id="PLAYER_HP_LEACH" bonus="4" mod="1" attribute="LIFE_LEACH" flag="1" desc="Each kill from the player have 5% chance to restore 4 hit points." name="Mortar" maxLevel="4" stage="3" x="170" y="292" level="3" bonusDesc="" />
+			<skill id="PLAYER_SPELL_DURATION" bonus="0.25" mod="1" attribute="SPELL_DURATION" flag="1" desc="Increases the duration of spells for the player by 25%." name="Glyphs" maxLevel="4" stage="2" x="217" y="260" level="0" bonusDesc="Increases duration by 50%" />
+			<skill id="PLAYER_SPELL_DURATION" bonus="0.5" mod="1" attribute="SPELL_DURATION" flag="1" desc="Increases the duration of spells for the player by 50%." name="Glyphs" maxLevel="4" stage="2" x="217" y="260" level="1" bonusDesc="Increases duration by 75%" />
+			<skill id="PLAYER_SPELL_DURATION" bonus="0.75" mod="1" attribute="SPELL_DURATION" flag="1" desc="Increases the duration of spells for the player by 75%." name="Glyphs" maxLevel="4" stage="2" x="217" y="260" level="2" bonusDesc="Increases duration by 100%" />
+			<skill id="PLAYER_SPELL_DURATION" bonus="1" mod="1" attribute="SPELL_DURATION" flag="1" desc="Increases the duration of spells for the player by 100%." name="Glyphs" maxLevel="4" stage="2" x="217" y="260" level="3" bonusDesc="" />
+			<skill id="SKILLTREE_SPELL_AOE" bonus="0.16" mod="1" attribute="SPELL_AOE" flag="3" desc="Increases area of effect of spells by 16%." name="Out of Control" maxLevel="4" stage="3" x="230" y="355" level="0" bonusDesc="Increases AOE by 24%" />
+			<skill id="SKILLTREE_SPELL_AOE" bonus="0.24" mod="1" attribute="SPELL_AOE" flag="3" desc="Increases area of effect of spells by 24%." name="Out of Control" maxLevel="4" stage="3" x="230" y="355" level="1" bonusDesc="Increases AOE by 32%" />
+			<skill id="SKILLTREE_SPELL_AOE" bonus="0.32" mod="1" attribute="SPELL_AOE" flag="3" desc="Increases area of effect of spells by 32%." name="Out of Control" maxLevel="4" stage="3" x="230" y="355" level="2" bonusDesc="Increases AOE by 40%" />
+			<skill id="SKILLTREE_SPELL_AOE" bonus="0.4" mod="1" attribute="SPELL_AOE" flag="3" desc="Increases area of effect of spells by 40%." name="Out of Control" maxLevel="4" stage="3" x="230" y="355" level="3" bonusDesc="" />
+			<skill id="PLAYER_CRITICAL_CHANCE" bonus="0.08" mod="1" attribute="CRITICAL_CHANCE" flag="1" desc="Gives a 8% chance that player spells will do double damage." name="Critical Strike" maxLevel="4" stage="2" x="257" y="308" level="0" bonusDesc="Improves to 14% chance" />
+			<skill id="PLAYER_CRITICAL_CHANCE" bonus="0.14" mod="1" attribute="CRITICAL_CHANCE" flag="1" desc="Gives a 14% chance that player spells will do double damage." name="Critical Strike" maxLevel="4" stage="2" x="257" y="308" level="1" bonusDesc="Improves to 20% chance" />
+			<skill id="PLAYER_CRITICAL_CHANCE" bonus="0.2" mod="1" attribute="CRITICAL_CHANCE" flag="1" desc="Gives a 20% chance that player spells will do double damage." name="Critical Strike" maxLevel="4" stage="2" x="257" y="308" level="2" bonusDesc="Improves to 26% chance" />
+			<skill id="PLAYER_CRITICAL_CHANCE" bonus="0.26" mod="1" attribute="CRITICAL_CHANCE" flag="1" desc="Gives a 26% chance that player spells will do double damage." name="Critical Strike" maxLevel="4" stage="2" x="257" y="308" level="3" bonusDesc="" />
+
+		</category>
+
+		<category id="Support">
+			<skill id="PLAYER_SCROLL_PER_WAVE" bonus="1" mod="1" attribute="SCROLL_PER_WAVE" flag="1" desc="Earns 1 additional scrolls each wave" name="Abundance" maxLevel="2" stage="2" x="402" y="260" level="0" bonusDesc="2 additional scrolls" />
+			<skill id="PLAYER_SCROLL_PER_WAVE" bonus="2" mod="1" attribute="SCROLL_PER_WAVE" flag="1" desc="Earns 2 additional scrolls each wave" name="Abundance" maxLevel="2" stage="2" x="402" y="260" level="1" bonusDesc="" />
+			<skill id="ALLY_SPELL_RANGE" bonus="0.2" mod="0" attribute="SPELL_RANGE" flag="2" desc="Increases the range of other wizards by 20%." name="Longsight" maxLevel="4" stage="1" x="355" y="256" level="0" bonusDesc="Increases by 30%" />
+			<skill id="ALLY_SPELL_RANGE" bonus="0.3" mod="0" attribute="SPELL_RANGE" flag="2" desc="Increases the range of other wizards by 30%." name="Longsight" maxLevel="4" stage="1" x="355" y="256" level="1" bonusDesc="Increases by 40%" />
+			<skill id="ALLY_SPELL_RANGE" bonus="0.4" mod="0" attribute="SPELL_RANGE" flag="2" desc="Increases the range of other wizards by 40%." name="Longsight" maxLevel="4" stage="1" x="355" y="256" level="2" bonusDesc="Increases by 50%" />
+			<skill id="ALLY_SPELL_RANGE" bonus="0.5" mod="0" attribute="SPELL_RANGE" flag="2" desc="Increases the range of other wizards by 50%." name="Longsight" maxLevel="4" stage="1" x="355" y="256" level="3" bonusDesc="" />
+			<skill id="ALLY_SPELL_DURATION" bonus="0.2" mod="1" attribute="SPELL_DURATION" flag="2" desc="Increases the duration of spells for allies by 20 %." name="Forever" maxLevel="4" stage="3" x="452" y="299" level="0" bonusDesc="Increases by 30 %" />
+			<skill id="ALLY_SPELL_DURATION" bonus="0.3" mod="1" attribute="SPELL_DURATION" flag="2" desc="Increases the duration of spells for allies by 30 %." name="Forever" maxLevel="4" stage="3" x="452" y="292" level="1" bonusDesc="Increases by 40 %" />
+			<skill id="ALLY_SPELL_DURATION" bonus="0.4" mod="1" attribute="SPELL_DURATION" flag="2" desc="Increases the duration of spells for allies by 40 %." name="Forever" maxLevel="4" stage="3" x="452" y="292" level="2" bonusDesc="Increases by 50 %" />
+			<skill id="ALLY_SPELL_DURATION" bonus="0.5" mod="1" attribute="SPELL_DURATION" flag="2" desc="Increases the duration of spells for allies by 50 %." name="Forever" maxLevel="4" stage="3" x="452" y="292" level="3" bonusDesc="" />
+			<skill id="ADD_WIZARD_SUPPORT" bonus="1" mod="1" attribute="ADD_WIZARD" flag="1" desc="Adds one aditional wizard" name="Hey Buddy" maxLevel="1" stage="2" x="362" y="308" level="0" bonusDesc="" />
+			<skill id="ALLY_CRITICAL_CHANCE" bonus="0.06" mod="1" attribute="CRITICAL_CHANCE" flag="2" desc="Gives a 6% chance that spells from allies will do double damage." name="Focus" maxLevel="4" stage="3" x="382" y="355" level="0" bonusDesc="Improves to 10% chance" />
+			<skill id="ALLY_CRITICAL_CHANCE" bonus="0.1" mod="1" attribute="CRITICAL_CHANCE" flag="2" desc="Gives a 10% chance that spells from allies will do double damage." name="Focus" maxLevel="4" stage="3" x="382" y="355" level="1" bonusDesc="Improves to 14% chance" />
+			<skill id="ALLY_CRITICAL_CHANCE" bonus="0.14" mod="1" attribute="CRITICAL_CHANCE" flag="2" desc="Gives a 14% chance that spells from allies will do double damage." name="Focus" maxLevel="4" stage="3" x="382" y="355" level="2" bonusDesc="Improves to 18% chance" />
+			<skill id="ALLY_CRITICAL_CHANCE" bonus="0.18" mod="1" attribute="CRITICAL_CHANCE" flag="2" desc="Gives a 18% chance that spells from allies will do double damage." name="Focus" maxLevel="4" stage="3" x="382" y="355" level="3" bonusDesc="" />
+		</category>
+	</skilltree>
+	<affinity>
+		<category id="DEATH">
+			<skill id="AFFINITY_DEATH" bonus="0.2" mod="1" attribute="CRITICAL_DAMAGE" flag="11" desc="Increase critical damage by 20% for spell crafted with one or more Death scrolls."  name="AffinityDeath" maxLevel="5" stage="0" x="0" y="0" level="0" bonusDesc="" />
+			<skill id="AFFINITY_DEATH" bonus="0.4" mod="1" attribute="CRITICAL_DAMAGE" flag="11" desc="Increase critical damage by 40% for spell crafted with one or more Death scrolls."  name="AffinityDeath" maxLevel="5" stage="0" x="0" y="0" level="1" bonusDesc="" />
+			<skill id="AFFINITY_DEATH" bonus="0.6" mod="1" attribute="CRITICAL_DAMAGE" flag="11" desc="Increase critical damage by 60% for spell crafted with one or more Death scrolls."  name="AffinityDeath" maxLevel="5" stage="0" x="0" y="0" level="2" bonusDesc="" />
+			<skill id="AFFINITY_DEATH" bonus="0.8" mod="1" attribute="CRITICAL_DAMAGE" flag="11" desc="Increase critical damage by 80% for spell crafted with one or more Death scrolls."  name="AffinityDeath" maxLevel="5" stage="0" x="0" y="0" level="3" bonusDesc="" />
+			<skill id="AFFINITY_DEATH" bonus="1" mod="1" attribute="CRITICAL_DAMAGE" flag="11" desc="Increase critical damage by 100% for spell crafted with one or more Death scrolls."  name="AffinityDeath" maxLevel="5" stage="0" x="0" y="0" level="4" bonusDesc="" />
+		</category>
+		<category id="EARTH">
+			<skill id="AFFINITY_EARTH" bonus="0.1" mod="1" attribute="DEFENSE_REDUCTION" flag="19" desc="Reduce the enemy defense by 10% for spell crafted with one or more Earth scrolls."  name="AffinityEarth" maxLevel="5" stage="0" x="" y="" level="0" bonusDesc="" />
+			<skill id="AFFINITY_EARTH" bonus="0.2" mod="1" attribute="DEFENSE_REDUCTION" flag="19" desc="Reduce the enemy defense by 20% for spell crafted with one or more Earth scrolls."  name="AffinityEarth" maxLevel="5" stage="0" x="" y="" level="1" bonusDesc="" />
+			<skill id="AFFINITY_EARTH" bonus="0.3" mod="1" attribute="DEFENSE_REDUCTION" flag="19" desc="Reduce the enemy defense by 30% for spell crafted with one or more Earth scrolls."  name="AffinityEarth" maxLevel="5" stage="0" x="" y="" level="2" bonusDesc="" />
+			<skill id="AFFINITY_EARTH" bonus="0.4" mod="1" attribute="DEFENSE_REDUCTION" flag="19" desc="Reduce the enemy defense by 40% for spell crafted with one or more Earth scrolls."  name="AffinityEarth" maxLevel="5" stage="0" x="" y="" level="3" bonusDesc="" />
+			<skill id="AFFINITY_EARTH" bonus="0.5" mod="1" attribute="DEFENSE_REDUCTION" flag="19" desc="Reduce the enemy defense by 50% for spell crafted with one or more Earth scrolls."  name="AffinityEarth" maxLevel="5" stage="0" x="" y="" level="4" bonusDesc="" />
+		</category>
+		<category id="FIRE">
+			<skill id="AFFINITY_FIRE" bonus="0.15" mod="1" attribute="BURN" flag="35" desc="15% chance to apply a burn effect on enemies for spell crafted with one or more Fire scrolls."  name="AffinityFire" maxLevel="5" stage="0" x="" y="" level="0" bonusDesc="" />
+			<skill id="AFFINITY_FIRE" bonus="0.2" mod="1" attribute="BURN" flag="35" desc="20% chance to apply a burn effect on enemies for spell crafted with one or more Fire scrolls."  name="AffinityFire" maxLevel="5" stage="0" x="" y="" level="1" bonusDesc="" />
+			<skill id="AFFINITY_FIRE" bonus="0.25" mod="1" attribute="BURN" flag="35" desc="25% chance to apply a burn effect on enemies for spell crafted with one or more Fire scrolls."  name="AffinityFire" maxLevel="5" stage="0" x="" y="" level="2" bonusDesc="" />
+			<skill id="AFFINITY_FIRE" bonus="0.3" mod="1" attribute="BURN" flag="35" desc="30% chance to apply a burn effect on enemies for spell crafted with one or more Fire scrolls."  name="AffinityFire" maxLevel="5" stage="0" x="" y="" level="3" bonusDesc="" />
+			<skill id="AFFINITY_FIRE" bonus="0.35" mod="1" attribute="BURN" flag="35" desc="35% chance to apply a burn effect on enemies for spell crafted with one or more Fire scrolls."  name="AffinityFire" maxLevel="5" stage="0" x="" y="" level="4" bonusDesc="" />
+		</category>
+		<category id="LIGHTNING">
+			<skill id="AFFINITY_LIGHTNING" bonus="0.4" mod="1" attribute="AREA_DAMAGE" flag="67" desc="20% Chance to deal 40% area damage on hit for spell crafted with one or more Lightning scrolls."  name="AffinityLightning" maxLevel="5" stage="0" x="" y="" level="0" bonusDesc="" />
+			<skill id="AFFINITY_LIGHTNING" bonus="0.55" mod="1" attribute="AREA_DAMAGE" flag="67" desc="20% Chance to deal 55% area damage on hit for spell crafted with one or more Lightning scrolls."  name="AffinityLightning" maxLevel="5" stage="0" x="" y="" level="1" bonusDesc="" />
+			<skill id="AFFINITY_LIGHTNING" bonus="0.7" mod="1" attribute="AREA_DAMAGE" flag="67" desc="20% Chance to deal 70% area damage on hit for spell crafted with one or more Lightning scrolls."  name="AffinityLightning" maxLevel="5" stage="0" x="" y="" level="2" bonusDesc="" />
+			<skill id="AFFINITY_LIGHTNING" bonus="0.85" mod="1" attribute="AREA_DAMAGE" flag="67" desc="20% Chance to deal 85% area damage on hit for spell crafted with one or more Lightning scrolls."  name="AffinityLightning" maxLevel="5" stage="0" x="" y="" level="3" bonusDesc="" />
+			<skill id="AFFINITY_LIGHTNING" bonus="1" mod="1" attribute="AREA_DAMAGE" flag="67" desc="20% Chance to deal 100% area damage on hit for spell crafted with one or more Lightning scrolls."  name="AffinityLightning" maxLevel="5" stage="0" x="" y="" level="4" bonusDesc="" />
+		</category>
+		<category id="WATER">
+			<skill id="AFFINITY_WATER" bonus="0.15" mod="1" attribute="FREEZE_CHANCE" flag="131" desc="15% chance to freeze the enemies during 1 sec for spell crafted with one or more Water scrolls."  name="AffinityWater" maxLevel="5" stage="0" x="" y="" level="0" bonusDesc="" />
+			<skill id="AFFINITY_WATER" bonus="0.2" mod="1" attribute="FREEZE_CHANCE" flag="131" desc="20% chance to freeze the enemies during 1 sec for spell crafted with one or more Water scrolls."  name="AffinityWater" maxLevel="5" stage="0" x="" y="" level="1" bonusDesc="" />
+			<skill id="AFFINITY_WATER" bonus="0.25" mod="1" attribute="FREEZE_CHANCE" flag="131" desc="25% chance to freeze the enemies during 1 sec for spell crafted with one or more Water scrolls."  name="AffinityWater" maxLevel="5" stage="0" x="" y="" level="2" bonusDesc="" />
+			<skill id="AFFINITY_WATER" bonus="0.3" mod="1" attribute="FREEZE_CHANCE" flag="131" desc="30% chance to freeze the enemies during 1 sec for spell crafted with one or more Water scrolls."  name="AffinityWater" maxLevel="5" stage="0" x="" y="" level="3" bonusDesc="" />
+			<skill id="AFFINITY_WATER" bonus="0.35" mod="1" attribute="FREEZE_CHANCE" flag="131" desc="35% chance to freeze the enemies during 1 sec for spell crafted with one or more Water scrolls."  name="AffinityWater" maxLevel="5" stage="0" x="" y="" level="4" bonusDesc="" />
+		</category>
+	</affinity>
+</data>

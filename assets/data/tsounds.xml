@@ -1,0 +1,32 @@
+<data>
+	<!-- optional values: 
+		volume 0-1, 1 by default
+		delay > 0, 0 by default
+	
+	
+	-->
+	<sounds>
+		<!-- Interface-->
+		<sound name="" id="1000" src="UISelectScroll__Ancient_Game_Game_Material_Crafting_Pick_Up_2" ext="wav" volume="1" />
+		<sound name="" id="1001" src="UICreateSpell__Ancient_Game_Magic_Sparkle_Appear" ext="wav" volume="1" />
+		<sound name="" id="1002" src="UIUpgradeSpell__Ancient_Game_Magic_Upgrade_Whoosh" ext="wav" volume="1" />
+
+		<sound name="" id="1020" src="UIPickupScroll__Ancient_Game_Tonal_Positive_Pick_Up" ext="wav" volume="1" />
+
+		<!-- Fire-->
+		<sound name="" id="2000" src="fireball_impact_burn_02" ext="wav" volume="0.6" />
+
+		<!-- Ice -->
+		<sound name="" id="3000" src="Ancient_Game_Magic_Ice_Crunch_Pick_Up" ext="wav" volume="0.6" />
+
+		<sound name="" id="3010" src="Ice_1" ext="mp3" volume="0.6" />
+		<sound name="" id="3011" src="Ice_2" ext="mp3" volume="0.6" />
+
+		<sound name="" id="3022" src="ice_spell_impact_hit_shard_03" ext="wav" volume="0.6" />
+		
+		<sound name="" id="3030" src="ice_spell_freeze_ground_01" ext="wav" volume="0.6" />
+		<sound name="" id="3031" src="ice_spell_freeze_frost_04" ext="wav" volume="0.6" />
+		
+
+	</sounds>
+</data>

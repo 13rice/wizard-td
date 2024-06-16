@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "lime",
+			"command": "test",
+			"group": "build",
+			"label": "lime: test (active configuration)"
+		},
+		{
+			"type": "hxml",
+			"file": "build.hxml",
+			"problemMatcher": [
+				"$haxe-absolute",
+				"$haxe",
+				"$haxe-error",
+				"$haxe-trace"
+			],
+			"group": "build",
+			"label": "haxe: build.hxml"
+		},
+		{
+			"type": "lime",
+			"command": "build",
+			"targetConfiguration": "HTML5 / Debug",
+			"problemMatcher": [
+				"$haxe-absolute",
+				"$haxe",
+				"$haxe-error",
+				"$haxe-trace"
+			],
+			"label": "lime: build html5 -debug",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

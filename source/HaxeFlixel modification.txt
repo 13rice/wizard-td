@@ -1,0 +1,198 @@
+FlxNapeSprite
+
+To fix an issue with STATIC body
+
+	/**
+	 * Creates a circular physics body for this sprite.
+	 *
+	 * @param	Radius	The radius of the circle-shaped body - 16 by default
+	 * @param 	_Type	The BodyType of the physics body. Optional, DYNAMIC by default.
+	 */
+	public function createCircularBody(Radius:Float = 16, ?_Type:BodyType):Void
+	{
+		if (body != null)
+		{
+			destroyPhysObjects();
+		}
+
+		centerOffsets(false);
+		
+		>>>> body = new Body(_Type != null ? _Type : BodyType.DYNAMIC, Vec2.weak(x, y));
+		body.shapes.add(new Circle(Radius));
+		>>>> setBody(body);
+
+		setBodyMaterial();
+	}
+
+	/**
+	 * Default method to create the physics body used by this sprite in shape of a rectangle.
+	 * Override this method to create your own physics body!
+	 * Call this method after calling makeGraphics() or loadGraphic() to update the body size.
+	 *
+	 * @param	Width	The width of the rectangle. Uses frameWidth if <= 0.
+	 * @param	Height	The height of the rectangle. Uses frameHeight if <= 0.
+	 * @param	_Type	The BodyType of the physics body. Optional, DYNAMIC by default.
+	 */
+	public function createRectangularBody(Width:Float = 0, Height:Float = 0, ?_Type:BodyType):Void
+	{
+		if (body != null)
+		{
+			destroyPhysObjects();
+		}
+
+		if (Width <= 0)
+		{
+			Width = frameWidth;
+		}
+		if (Height <= 0)
+		{
+			Height = frameHeight;
+		}
+
+		centerOffsets(false);
+		>>>> body = new Body(_Type != null ? _Type : BodyType.DYNAMIC, Vec2.weak(x, y));
+		body.shapes.add(new Polygon(Polygon.box(Width, Height)));
+		>>>> setBody(body);
+
+		setBodyMaterial();
+	}
+	
+	
+FlxSpriteGroup
+
+
+NO VERIFICATION if the Sprite has already been added ==> issue with x and y if a sprite is added twice !!!
+
+	public function add(Sprite:T):T
+	{
+		preAdd(Sprite);
+		return group.add(Sprite);
+	}
+	
+	
+	
+	
+FlxDrawQuadsItem
+
+
+	override public function render(camera:FlxCamera):Void
+	{
+		if (rects.length == 0)
+			return;
+
+		var shader = shader != null ? shader : graphics.shader;
+		shader.bitmap.input = graphics.bitmap;
+		shader.bitmap.filter = (camera.antialiasing || antialiasing) ? LINEAR : NEAREST;
+		shader.alpha.value = alphas;
+
+		// >>>> if (colored || hasColorOffsets)
+		{
+			// DEBUG COLOR
+			shader.colorMultiplier.value = colorMultipliers;
+			shader.colorOffset.value = colorOffsets;
+		}
+
+		setParameterValue(shader.hasTransform, true);
+		setParameterValue(shader.hasColorTransform, colored || hasColorOffsets);
+
+		#if (openfl > "8.7.0")
+		camera.canvas.graphics.overrideBlendMode(blend);
+		#end
+		camera.canvas.graphics.beginShaderFill(shader);
+		camera.canvas.graphics.drawQuads(rects, null, transforms);
+		super.render(camera);
+	}
+	
+	
+FlxButton
+
+	function updateStatusAnimation():Void
+	{
+		>>>>>>>>>>> // Animation can be null if the button has been destroyed and the status has changed
+		>>>>>>>>>>> if (animation != null)
+			animation.play(statusAnimations[status]);
+	}
+
+	
+	
+		/**
+	 * Called by the game loop automatically, handles mouseover and click detection.
+	 */
+	override public function update(elapsed:Float):Void
+	{
+		super.update(elapsed);
+
+		if (visible)
+		{
+			// Update the button, but only if at least either mouse or touches are enabled
+			#if FLX_POINTER_INPUT
+			updateButton();
+			#end
+
+			// Trigger the animation only if the button's input status changes.
+			if (lastStatus != status)
+			{
+				updateStatusAnimation();
+				lastStatus = status;
+			}
+		}
+
+		>>>>>>>>>>> // Input can be null if the button has been destroyed during updateButton
+		>>>>>>>>>>> if (input != null)
+			input.update();
+	}
+
+
+FlxBitmapText
+
+
+// Alpha issue when using textColor and useTextColor
+			if (useTextColor)
+			{
+				textRed *= textColor.redFloat;
+				textGreen *= textColor.greenFloat;
+				textBlue *= textColor.blueFloat;
+				>>>>>>>>>>>> tAlpha *= textColor.alpha;
+				tAlpha *= textColor.alphaFloat;
+			}
+
+
+
+
+OPTIMIZATION :
+	
+FlxObject
+
+UpdateMotion, avoid x += delta if delta = 0, same for y
+
+
+
+
+
+CANNONML Modification ====================
+
+
+
+CMLBarrageELEM
+
+// check end
+public function isEnd() : Bool
+{
+	return (counter <= 0); // counter == 0 (infinite loop with float value in JS)
+}
+
+
+HAXE Modification ===========================
+
+
+
+HttpJs.hx
+
+
+Crash on unknow host
+
+			//} else if (s == null) {
+			} else if (s == null || s == 0) {
+				req = null;
+				onError("Failed to connect or resolve host");
+			} else

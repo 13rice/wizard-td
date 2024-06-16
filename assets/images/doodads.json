@@ -1,0 +1,564 @@
+{"frames": [
+
+{
+	"filename": "front.png",
+	"frame": {"x":0,"y":0,"w":35,"h":480},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":480},
+	"sourceSize": {"w":35,"h":480}
+},
+{
+	"filename": "tower-wall-death_00.png",
+	"frame": {"x":852,"y":659,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_01.png",
+	"frame": {"x":0,"y":838,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_02.png",
+	"frame": {"x":86,"y":838,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_03.png",
+	"frame": {"x":172,"y":838,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_04.png",
+	"frame": {"x":258,"y":838,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_05.png",
+	"frame": {"x":344,"y":838,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_06.png",
+	"frame": {"x":430,"y":838,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_07.png",
+	"frame": {"x":516,"y":838,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_08.png",
+	"frame": {"x":602,"y":838,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_09.png",
+	"frame": {"x":688,"y":838,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_10.png",
+	"frame": {"x":774,"y":838,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_11.png",
+	"frame": {"x":0,"y":974,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_12.png",
+	"frame": {"x":86,"y":974,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_13.png",
+	"frame": {"x":172,"y":974,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_14.png",
+	"frame": {"x":258,"y":974,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_15.png",
+	"frame": {"x":344,"y":974,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_16.png",
+	"frame": {"x":430,"y":974,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_17.png",
+	"frame": {"x":516,"y":974,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_18.png",
+	"frame": {"x":602,"y":974,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_19.png",
+	"frame": {"x":688,"y":974,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_20.png",
+	"frame": {"x":774,"y":974,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_21.png",
+	"frame": {"x":0,"y":1110,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_22.png",
+	"frame": {"x":86,"y":1110,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_23.png",
+	"frame": {"x":172,"y":1110,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_24.png",
+	"frame": {"x":258,"y":1110,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_25.png",
+	"frame": {"x":344,"y":1110,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_26.png",
+	"frame": {"x":430,"y":1110,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_27.png",
+	"frame": {"x":516,"y":1110,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_28.png",
+	"frame": {"x":602,"y":1110,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-death_29.png",
+	"frame": {"x":688,"y":1110,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "tower-wall-idle_0.png",
+	"frame": {"x":774,"y":1110,"w":86,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":136},
+	"sourceSize": {"w":86,"h":136}
+},
+{
+	"filename": "wall-death_000.png",
+	"frame": {"x":35,"y":0,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_001.png",
+	"frame": {"x":106,"y":0,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_002.png",
+	"frame": {"x":177,"y":0,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_003.png",
+	"frame": {"x":248,"y":0,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_004.png",
+	"frame": {"x":319,"y":0,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_005.png",
+	"frame": {"x":390,"y":0,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_006.png",
+	"frame": {"x":461,"y":0,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_007.png",
+	"frame": {"x":532,"y":0,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_008.png",
+	"frame": {"x":603,"y":0,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_009.png",
+	"frame": {"x":674,"y":0,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_010.png",
+	"frame": {"x":745,"y":0,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_011.png",
+	"frame": {"x":816,"y":0,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_012.png",
+	"frame": {"x":0,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_013.png",
+	"frame": {"x":71,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_014.png",
+	"frame": {"x":142,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_015.png",
+	"frame": {"x":213,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_016.png",
+	"frame": {"x":284,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_017.png",
+	"frame": {"x":355,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_018.png",
+	"frame": {"x":426,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_019.png",
+	"frame": {"x":497,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_020.png",
+	"frame": {"x":568,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_021.png",
+	"frame": {"x":639,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_022.png",
+	"frame": {"x":710,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_023.png",
+	"frame": {"x":781,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_024.png",
+	"frame": {"x":852,"y":480,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_025.png",
+	"frame": {"x":0,"y":659,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_026.png",
+	"frame": {"x":71,"y":659,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_027.png",
+	"frame": {"x":142,"y":659,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_028.png",
+	"frame": {"x":213,"y":659,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_029.png",
+	"frame": {"x":284,"y":659,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_030.png",
+	"frame": {"x":355,"y":659,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_031.png",
+	"frame": {"x":426,"y":659,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_032.png",
+	"frame": {"x":497,"y":659,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_033.png",
+	"frame": {"x":568,"y":659,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_034.png",
+	"frame": {"x":639,"y":659,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-death_035.png",
+	"frame": {"x":710,"y":659,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+},
+{
+	"filename": "wall-idle_0.png",
+	"frame": {"x":781,"y":659,"w":71,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":71,"h":179},
+	"sourceSize": {"w":71,"h":179}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "doodads.png",
+	"format": "RGBA8888",
+	"size": {"w":938,"h":1246},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7e34de54f79753d42c2c6afe0673d73b:e4b1b2593b59638a55602d12b1f95b42:235b3058f25cc2125c9df6a215d832b6$"
+}
+}

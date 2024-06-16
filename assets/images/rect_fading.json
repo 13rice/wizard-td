@@ -1,0 +1,92 @@
+{"frames": [
+
+{
+	"filename": "rect_fade_200_1.png",
+	"frame": {"x":0,"y":0,"w":200,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+	"sourceSize": {"w":200,"h":200}
+},
+{
+	"filename": "rect_fade_200_3.png",
+	"frame": {"x":200,"y":0,"w":200,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+	"sourceSize": {"w":200,"h":200}
+},
+{
+	"filename": "rect_fade_200_5.png",
+	"frame": {"x":400,"y":0,"w":200,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+	"sourceSize": {"w":200,"h":200}
+},
+{
+	"filename": "rect_fade_200_7.png",
+	"frame": {"x":600,"y":0,"w":200,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+	"sourceSize": {"w":200,"h":200}
+},
+{
+	"filename": "rect_fade_200_9.png",
+	"frame": {"x":800,"y":0,"w":200,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+	"sourceSize": {"w":200,"h":200}
+},
+{
+	"filename": "rect_fade_200_11.png",
+	"frame": {"x":1000,"y":0,"w":200,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+	"sourceSize": {"w":200,"h":200}
+},
+{
+	"filename": "rect_fade_200_13.png",
+	"frame": {"x":1200,"y":0,"w":200,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+	"sourceSize": {"w":200,"h":200}
+},
+{
+	"filename": "rect_fade_200_15.png",
+	"frame": {"x":1400,"y":0,"w":200,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+	"sourceSize": {"w":200,"h":200}
+},
+{
+	"filename": "rect_fade_200_17.png",
+	"frame": {"x":1600,"y":0,"w":200,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+	"sourceSize": {"w":200,"h":200}
+},
+{
+	"filename": "rect_fade_200_19.png",
+	"frame": {"x":1800,"y":0,"w":200,"h":200},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":200},
+	"sourceSize": {"w":200,"h":200}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "rect_fading.png",
+	"format": "RGBA8888",
+	"size": {"w":2000,"h":200},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5dfde46c3aed4eeb95f2ff044fb9b535:5d9c1988f69c9b1b25444599c6afd6c0:efe3d9d07bca3c9a8f2999d111ad0fe4$"
+}
+}

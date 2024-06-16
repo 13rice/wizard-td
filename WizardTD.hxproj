@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project version="2">
+  <!-- Output SWF options -->
+  <output>
+    <movie outputType="CustomBuild" />
+    <movie input="" />
+    <movie path="project.xml" />
+    <movie fps="30" />
+    <movie width="640" />
+    <movie height="480" />
+    <movie version="0" />
+    <movie minorVersion="0" />
+    <movie platform="Lime" />
+    <movie background="#FFFFFF" />
+  </output>
+  <!-- Other classes to be compiled into your SWF -->
+  <classpaths>
+    <class path="C:\HaxeToolkit\haxe\lib\flixel\5,2,2" />
+    <class path="C:\HaxeToolkit\haxe\lib\openfl\9,1,0\src" />
+    <class path="C:\HaxeToolkit\haxe\lib\lime\7,9,0\src" />
+    <class path="C:\HaxeToolkit\haxe\lib\hscript\2,4,0" />
+    <class path="C:\HaxeToolkit\haxe\lib\flixel-addons\2,11,0" />
+    <class path="C:\HaxeToolkit\haxe\lib\flixel-ui\2,4,0" />
+    <class path="C:\HaxeToolkit\haxe\lib\nape-haxe4\2,0,22" />
+    <class path="C:\HaxeToolkit\haxe\lib\cannonml\0,3,1" />
+    <class path="C:\HaxeToolkit\haxe\lib\actuate\1,8,9\src" />
+    <class path="C:\HaxeToolkit\haxe\lib\uuid\2,3,3\src" />
+    <class path="source" />
+    <class path="..\..\Flash\shared" />
+  </classpaths>
+  <!-- Build options -->
+  <build>
+    <option directives="flixel=5.2.2&#xA;openfl=9.1.0&#xA;lime=7.9.0&#xA;hscript=2.4.0&#xA;flixel-addons=2.11.0&#xA;flixel-ui=2.4.0&#xA;nape-haxe4=2.0.22&#xA;cannonml=0.3.1&#xA;actuate=1.8.9&#xA;uuid=2.3.3&#xA;tools=7.9.0&#xA;lime-canvas&#xA;nape&#xA;FLX_NO_DEBUG&#xA;howlerjs&#xA;no-compilation&#xA;openfl-html5&#xA;NAPE_RELEASE_BUILD&#xA;lime-webgl&#xA;lime-dom&#xA;lime-howlerjs&#xA;lime-html5&#xA;html5&#xA;web&#xA;html" />
+    <option flashStrict="False" />
+    <option noInlineOnDebug="False" />
+    <option mainClass="ApplicationMain" />
+    <option enabledebug="False" />
+    <option additional="--macro openfl.utils._internal.ExtraParamsMacro.include()&#xA;--macro lime._internal.macros.DefineMacro.run()&#xA;--remap flash:openfl&#xA;--macro flixel.system.macros.FlxDefines.run()&#xA;--no-output " />
+  </build>
+  <!-- haxelib libraries -->
+  <haxelib>
+    <!-- example: <library name="..." /> -->
+  </haxelib>
+  <!-- Class files to compile (other referenced classes will automatically be included) -->
+  <compileTargets>
+    <compile path="source\Main.hx" />
+  </compileTargets>
+  <!-- Paths to exclude from the Project Explorer tree -->
+  <hiddenPaths>
+    <hidden path="obj" />
+  </hiddenPaths>
+  <!-- Executed before build -->
+  <preBuildCommand>"$(CompilerPath)/haxelib" run lime build "$(OutputFile)" $(TargetBuild) -$(BuildConfig) -Dfdb</preBuildCommand>
+  <!-- Executed after build -->
+  <postBuildCommand alwaysRun="False" />
+  <!-- Other project options -->
+  <options>
+    <option showHiddenPaths="False" />
+    <option testMovie="Custom" />
+    <option testMovieCommand="" />
+  </options>
+  <!-- Plugin storage -->
+  <storage />
+</project>
