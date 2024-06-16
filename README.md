@@ -1,9 +1,9 @@
-# wizard-td
+# Wizard Spell TD
 Quick game for Haxe jam 2024
 
 
-Wizard TD is tower defense with spells instead of towers !
-Craft spells with elements from your oppenents.
+Wizard Spell TD is tower defense with spells instead of towers !
+Craft spells with elements from your oppenents and crush them.
 
 ## Controls:
 **Mouse click** to select a location or a spell (tower)
