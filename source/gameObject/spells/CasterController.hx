@@ -133,7 +133,7 @@ class CasterController {
 				state.spellCasting(target.x, target.y, _spellsPosition[i], _wizardTowers[i]);
 
 			target = null;
-			targetDistance = 9999;
+			targetDistance = 9999999;
 		}
 	}
 

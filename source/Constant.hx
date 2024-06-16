@@ -26,7 +26,11 @@ class Constant {
 
 	// PLAYER ======================================================
 	public static inline var DEFAULT_CRITICAL_DAMAGE:Int = 2; // factor
+	#if debug
+	public static inline var DEFAULT_SCROLLS:Int = 100;
+	#else
 	public static inline var DEFAULT_SCROLLS:Int = 1;
+	#end
 	public static inline var FIRST_POSITION:Int = 68;
 
 	// SPELL ======================================================

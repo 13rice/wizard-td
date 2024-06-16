@@ -139,6 +139,8 @@ class PlayState extends FlxState {
 
 	private var _cursorSelected:FlxSprite = null;
 
+	private var _aoe:FlxSprite = null;
+
 	private var _lastOverPt:FlxPoint = FlxPoint.get();
 
 	private var _lastSelectedIndex:Int = 0;
@@ -391,6 +393,13 @@ class PlayState extends FlxState {
 		_cursorSelected.animation.play("idle");
 		_cursorSelected.visible = true;
 		add(_cursorSelected);
+		_aoe = new FlxSprite();
+		_aoe.frames = _atlases[Constant.ATLAS_UI];
+		_aoe.animation.frameName = "aoe_mask.png";
+		_aoe.updateHitbox();
+		_aoe.offset.set(100, 100);
+		_aoe.visible = false;
+		add(_aoe);
 		
 		_uiAssaultCompleted = new UIAssaultCompleted();
 
@@ -697,7 +706,11 @@ class PlayState extends FlxState {
 				var selectedSpellSkill =_casterController.selectIndex(_lastSelectedIndex);
 				displayAutelForSpellSkill(selectedSpellSkill, true);
 
-				// TODO PLAYER SELECTION PlayState.get().selectSpellSkill(frame.spellSkill);
+				if (selectedSpellSkill != null) {
+					refreshAOE(selectedSpellSkill);
+				} else {
+					_aoe.visible = false;
+				}
 			}
 		}
 
@@ -862,6 +875,7 @@ class PlayState extends FlxState {
 				// Spell buffered, require a remove first
 			}
 
+			refreshAOE(spellSkill);
 			_spellSkills.push(spellSkill);
 
 			onElementRemoved();
@@ -919,7 +933,7 @@ class PlayState extends FlxState {
 		if (leftSpellCasting.spellSkill == spellSkill) {
 			// Do some refresh
 		}
-
+		refreshAOE(spellSkill);
 		_player.onLevelUpSpell(spellSkill);
 
 		onElementRemoved();
@@ -935,6 +949,15 @@ class PlayState extends FlxState {
 
 	public function onRecycleClick():Bool {
 		return !buttonClicked;
+	}
+
+	private function refreshAOE(spellSkill:SpellSkill) {
+		// Recresh aoe
+		_aoe.scale.x = spellSkill.spellLevel.areaWidth * 2 / 200;
+		_aoe.scale.y = spellSkill.spellLevel.areaWidth * 2 / 200;
+		_aoe.x = _cursorSelected.x + Constant.CELL_SIZE / 2;
+		_aoe.y = _cursorSelected.y + Constant.CELL_SIZE / 2;
+		_aoe.visible = true;
 	}
 
 	private function onGridCellOver(index:Int):Void {
@@ -970,7 +993,7 @@ class PlayState extends FlxState {
 
 	public function retryAssault() {
 		var play = new PlayState();
-		play.assault = assault;
+		play.assault = null;
 		FlxG.switchState(play);
 	}
 
@@ -1042,10 +1065,6 @@ class PlayState extends FlxState {
 	private function onElementRemoved():Void {
 		// Refresh scrolls count in the UI
 		_uiGameScrolls.refreshScrollsCount();
-
-		// Refresh Spell Actions
-		// _uiActions.refreshLevelUpArrow();
-		// TODO LEVEL UP ARROWS
 	}
 
 	private function debugAddUnits():Void {

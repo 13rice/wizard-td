@@ -83,11 +83,11 @@
 
 			<spellSkill id="2000012" name="Firebolt" el0="fire" el1="fire">
 				<spellLevels>
-					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.5" 	level="1" areaWidth="120" damage="2" range="15" duration="2" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
-					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.48" 	level="2" areaWidth="120" damage="4" range="15" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
-					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.46" 	level="3" areaWidth="120" damage="6" range="15" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
-					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.44" 	level="4" areaWidth="120" damage="8" range="15" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
-					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.42" 	level="5" areaWidth="120" damage="10" range="15" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.5" 	level="1" areaWidth="110" damage="2" range="15" duration="2" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.48" 	level="2" areaWidth="110" damage="4" range="15" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.46" 	level="3" areaWidth="110" damage="6" range="15" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.44" 	level="4" areaWidth="110" damage="8" range="15" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
+					<spellLevel name="Firebolt" spellId="1200003" coolDown="0.42" 	level="5" areaWidth="110" damage="10" range="15" icon="tower_fire.png" description="Hurls a Firebolt dealing damage to enemy units in a small area." short="Deals %%damage%% damage. Reduce cooldown." />
 				</spellLevels>
 			</spellSkill>
 
@@ -116,11 +116,11 @@
 
 			<spellSkill id="2000015" name="Sword" el0="metal" el1="metal" >
 				<spellLevels>
-					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="1" areaWidth="120" damage="1" 	range="10" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
-					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="2" areaWidth="120" damage="2" 	range="11" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
-					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="3" areaWidth="120" damage="3" 	range="12" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
-					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="4" areaWidth="120" damage="4" 	range="13" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
-					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="5" areaWidth="120" damage="5" 	range="15" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
+					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="1" areaWidth="100" damage="1" 	range="10" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
+					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="2" areaWidth="100" damage="2" 	range="11" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
+					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="3" areaWidth="100" damage="3" 	range="12" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
+					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="4" areaWidth="100" damage="4" 	range="13" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
+					<spellLevel name="Sword" spellId="1200000" coolDown="0.4" level="5" areaWidth="100" damage="5" 	range="15" icon="tower_sword.png" description="A sword that slashes enemies, causing damage to units in a line." short="Deals %%damage%% damage. Increase projectile range." />
 				</spellLevels>
 			</spellSkill>
 
