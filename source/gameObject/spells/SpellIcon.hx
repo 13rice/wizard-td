@@ -128,17 +128,20 @@ class SpellIcon extends FlxSpriteGroup {
 		if (_spellLevel == value)
 			return _spellLevel;
 
+		_spellLevel = value;
+
 		// Refresh icon
 		if (this.visible) {
 			if (_icon == null) {
 				_icon = new FlxSprite(0, 0);
+				_icon.frames = PlayState.get().getAtlas(Constant.ATLAS_UI);
 				add(_icon);
 			}
 
-			_icon.frames = PlayState.get().getAtlas(Constant.ATLAS_UI);
 			_icon.animation.frameName = _spellLevel.iconName;
+			_icon.updateHitbox();
 		}
 
-		return _spellLevel = value;
+		return _spellLevel;
 	}
 }

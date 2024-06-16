@@ -934,6 +934,7 @@ class PlayState extends FlxState {
 			// Do some refresh
 		}
 		refreshAOE(spellSkill);
+		spellSkill.generateIcon();
 		_player.onLevelUpSpell(spellSkill);
 
 		onElementRemoved();
