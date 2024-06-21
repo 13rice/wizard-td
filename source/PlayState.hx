@@ -252,6 +252,10 @@ class PlayState extends FlxState {
 
 	private var _i:Int = 0;
 
+	public var displaydmgtext:Bool = true;
+	public var displayBlood:Bool = true;
+	
+
 	public static function get():PlayState {
 		return _thisState;
 	}
@@ -276,7 +280,8 @@ class PlayState extends FlxState {
 			var waves:Array<Wave> = [];
 
 			for (i in 0...48) {
-				var wave = new Wave(20, 6);
+				// 6 -> 8 -> 10... scrolls every 10 waves
+				var wave = new Wave(20, 6 + Math.floor(i / 10) * 2);
 				wave.addScrollType(Element.FIRE, 4);
 				wave.addScrollType(Element.METAL, 4);
 				wave.addScrollType(Element.WATER, 4);
@@ -439,12 +444,15 @@ class PlayState extends FlxState {
 			for (i in 0...Constant.GRID_WIDTH) {
 				if (_gridSpells[j][i] > 0 ) {
 					var btn = new FlxButton((i + 1) * Constant.CELL_SIZE, (j + 2) * Constant.CELL_SIZE);
+					// For mouse over on web mobile
+					btn.allowSwiping = false;
 					btn.makeGraphic(32, 32, FlxColor.TRANSPARENT);
 					add(btn);
 
 					var index = i + j * Constant.GRID_WIDTH;
 					btn.onOver.callback = onGridCellOver.bind(index);
-					//btn.onUp.callback = onGridCellUp.bind(index);
+					// For web mobile also
+					btn.onDown.callback = onGridCellOver.bind(index);
 
 					_grids[j][i] = btn;
 				}
@@ -616,6 +624,12 @@ class PlayState extends FlxState {
 			// _uiAssaultCompleted.display(true, 65, 124);
 		} else if (FlxG.keys.pressed.CONTROL && FlxG.keys.justPressed.X) {
 			_aka.deleteAll();
+		} else if (FlxG.keys.pressed.CONTROL && FlxG.keys.justPressed.ONE) {
+			this.displaydmgtext = !this.displaydmgtext;
+			Log.trace('DmgText: ' + displaydmgtext);
+		} else if (FlxG.keys.pressed.CONTROL && FlxG.keys.justPressed.TWO) {
+			this.displayBlood = !this.displayBlood;
+			Log.trace('Blood: ' + displayBlood);
 		}
 		#end
 	}
@@ -967,6 +981,7 @@ class PlayState extends FlxState {
 
 		_cursorSelection.x = _lastOverPt.x = i * Constant.CELL_SIZE + Constant.BASE_GRID_X;
 		_cursorSelection.y =_lastOverPt.y = j * Constant.CELL_SIZE + Constant.BASE_GRID_Y;
+		_grids[j][i].colorTransform.blueOffset = 255;
 	}
 
 	public function initializePlayer(element:Element) {
@@ -978,6 +993,22 @@ class PlayState extends FlxState {
 		add(spellSkill.generateIcon());
 
 		_uiSpellSelection.addSpell(spellSkill, Constant.FIRST_POSITION);
+
+		/*var spells = [2000005, 2000021, 2000015, 2000008, 2000004, 2000012];
+		for (j in 0..._gridSpells.length) {
+			for (i in 0..._gridSpells[7].length) {
+				if (_gridSpells[j][i] == 0)
+					continue;
+
+				var position = i + Constant.GRID_WIDTH * j;
+				spellSkill = DataSpell.get().getTSpellSkill(spells[0]);
+				_casterController.addSpellAtPosition(spellSkill, position);
+				_spellSkills.push(spellSkill);
+
+				add(spellSkill.generateIcon());
+				_uiSpellSelection.addSpell(spellSkill, position);
+			}
+		}*/
 
 		//selectSpellSkill(_spellSkills[0]);
 		//add(leftSpellCasting.spellSelector);

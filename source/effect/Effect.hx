@@ -1,7 +1,6 @@
 package effect;
 
 import haxe.ds.BalancedTree.TreeNode;
-import js.html.rtc.IdentityAssertion;
 import flixel.util.FlxDirectionFlags;
 import flixel.FlxSprite;
 

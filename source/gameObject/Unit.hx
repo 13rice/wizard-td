@@ -230,10 +230,9 @@ class Unit extends GameObject {
 	override function dealDamage(damage:Float, source:GameObject, flag:DamageFlag, sourceFlag:AttributeFlag, mask:Bool = true):Bool {
 		var dmgFactor = PlayState.get().attributeController.calculateValue(AttributeType.DEFENSE_REDUCTION, sourceFlag, _damageFactor);
 		var realDamage:Float = damage * dmgFactor;
-		var dmgText = DamageText.create(graphicX, graphicY, realDamage, false);
-
-		if (dmgText != null)
-			PlayState.get().add(dmgText);
+		if (PlayState.get().displaydmgtext) {
+			var dmgText = DamageText.create(graphicX, graphicY, realDamage, false);
+		}
 
 		if (super.dealDamage(realDamage, source, flag, sourceFlag, mask)) {
 			kill();
@@ -417,6 +416,8 @@ class Unit extends GameObject {
 	 * @param	kill
 	 */
 	function spawnBloodEffect(kill:Bool) {
+		if (!PlayState.get().displayBlood)
+			return;
 		// Some blood
 		if ((kill && Math.random() < Constant.BLOOD_KILL_FACTOR) || (!kill && Math.random() < Constant.BLOOD_DAMAGE_FACTOR)) {
 			Effect.playEffect(_sprite.body.position.x, _sprite.body.position.y, BLOOD_ANIM[Math.floor(Math.random() * BLOOD_ANIM.length)], 35).center();

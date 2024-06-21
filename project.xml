@@ -18,7 +18,7 @@
 	<window orientation="portrait" vsync="true" antialiasing="0" if="cpp" />
 	
 	<!--HTML5-specific-->
-	<window if="html5" resizable="false" />
+	<window if="html5" resizable="true" />
 	
 	<!--Desktop-specific-->
 	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" />
@@ -31,7 +31,6 @@
 	<set name="BUILD_DIR" value="export" />
 	
 	<classpath name="source" />
-	
 	
 	<source path="../../Flash/shared" />
 	
